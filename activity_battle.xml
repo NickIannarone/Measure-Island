@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/battle_layout"
+    tools:context="com.example.zniannar.measureisland.Battle">
+
+    <TextView
+        android:id="@+id/ticker"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Chronometer
+            android:id="@+id/timerL"
+            android:textColor="#ed1d1d"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="185dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="#afafaf"/>
+
+        <Chronometer
+            android:id="@+id/timerC"
+            android:textColor="#ed1d1d"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="185dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="#afafaf"/>
+
+        <Chronometer
+            android:id="@+id/timerR"
+            android:textColor="#ed1d1d"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="185dp"
+            android:layout_height="30dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="#afafaf"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/problemL"
+            android:layout_marginLeft="10dp"
+            android:layout_width="185dp"
+            android:layout_height="120dp"
+            android:background="#504a4a"
+            android:textColor="#ffee30"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/problemC"
+            android:layout_marginLeft="10dp"
+            android:layout_width="185dp"
+            android:layout_height="120dp"
+            android:background="#504a4a"
+            android:textColor="#ffee30"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/problemR"
+            android:layout_marginLeft="10dp"
+            android:layout_width="185dp"
+            android:layout_height="120dp"
+            android:background="#504a4a"
+            android:textColor="#ffee30"
+            android:textSize="20sp"
+            android:text=""/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/exitBattleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="250dp"
+            android:text="xxxxxxx"
+            android:onClick="exitBattleScreen"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/monsterL"
+            android:layout_marginLeft="0dp"
+            android:layout_width="200dp"
+            android:layout_height="270dp"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/monsterC"
+            android:layout_width="200dp"
+            android:layout_height="270dp"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/monsterR"
+            android:layout_width="200dp"
+            android:layout_height="270dp"
+            android:scaleType="fitXY"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/jockSpecialMove"
+            android:layout_marginLeft="0dp"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#be3939"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:text="---"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/musicianSpecialMove"
+            android:layout_marginLeft="0dp"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#61b65d"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:text="---"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/bookwormSpecialMove"
+            android:layout_marginLeft="0dp"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#b9b135"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:text="---"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/artistSpecialMove"
+            android:layout_marginLeft="0dp"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="#5a69f4"
+            android:textColor="#ffffff"
+            android:textSize="40sp"
+            android:text="---"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/hpbars"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/hpbars1" />
+
+        <TextView
+            android:id="@+id/jockHP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="107dp"
+            android:text="50"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/musicianHP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="107dp"
+            android:layout_toRightOf="@id/jockHP"
+            android:text="50"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bookwormHP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="107dp"
+            android:layout_toRightOf="@id/musicianHP"
+            android:text="50"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/artistHP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="107dp"
+            android:layout_toRightOf="@id/bookwormHP"
+            android:text="50"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/jockIQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jockHP"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="0dp"
+            android:text="0"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/musicianIQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/musicianHP"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/jockIQ"
+            android:text="0"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bookwormIQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bookwormHP"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/musicianIQ"
+            android:text="0"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/artistIQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/artistHP"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/bookwormIQ"
+            android:text="0"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/jockXP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jockIQ"
+            android:layout_marginLeft="90dp"
+            android:layout_marginTop="0dp"
+            android:text="0"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/musicianXP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/musicianIQ"
+            android:layout_marginLeft="135dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/jockXP"
+            android:text="0"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/bookwormXP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bookwormIQ"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/musicianXP"
+            android:text="0"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/artistXP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/artistIQ"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="0dp"
+            android:layout_toRightOf="@id/bookwormXP"
+            android:text="0"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="0dp">
+
+        <EditText
+            android:id="@+id/battle_email"
+            android:layout_width="500dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="0dp"
+            android:ems="10"
+            android:textStyle="italic"
+            android:background="#fff"
+            android:textColor="#000"
+            android:windowSoftInputMode="stateHidden|adjustNothing"
+            android:onClick="deleteText"/>
+
+
+    <com.example.zniannar.measureisland.MyKeyboard
+        android:id="@+id/keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+
+</LinearLayout>
+</LinearLayout>

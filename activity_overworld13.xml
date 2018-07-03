@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/seabg13"
+    tools:context="com.example.zniannar.measureisland.Overworld13">
+
+    <ImageView
+        android:id="@+id/topBorder"
+        android:src="@drawable/spacebattle2"
+        android:scaleType="fitXY"
+        android:layout_width="600dp"
+        android:layout_height="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/leftBorder"
+            android:src="@drawable/spacebattle2"
+            android:layout_width="3dp"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/avatar3"
+                android:layout_marginTop="300dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/walkfront1"
+                android:scaleType="fitXY"/>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="195dp">
+
+                <Button
+                    android:id="@+id/enter"
+                    android:layout_marginTop="63dp"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="MENU"
+                    android:textSize="25sp"
+                    android:textColor="#000"
+                    android:background="#ac5419"
+                    android:onClick="hitMenu"/>
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="230dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="60dp"
+                    android:ems="10"
+                    android:textStyle="italic"
+                    android:background="#fff"
+                    android:text="  "
+                    android:textColor="#000"
+                    android:windowSoftInputMode="stateHidden|adjustNothing"
+                    android:onClick="deleteText"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/upArrow3"
+                        android:layout_marginLeft="56dp"
+                        android:layout_width="53dp"
+                        android:layout_height="53dp"
+                        android:src="@drawable/uparrow"
+                        android:scaleType="fitXY"
+                        android:onClick="walkUp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageButton
+                            android:id="@+id/leftArrow3"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="53dp"
+                            android:layout_height="53dp"
+                            android:src="@drawable/leftarrow"
+                            android:scaleType="fitXY"
+                            android:onClick="walkLeft"/>
+
+                        <ImageButton
+                            android:id="@+id/rightArrow3"
+                            android:layout_marginLeft="20dp"
+                            android:layout_width="53dp"
+                            android:layout_height="53dp"
+                            android:src="@drawable/rightarrow"
+                            android:scaleType="fitXY"
+                            android:onClick="walkRight"/>
+
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/downArrow3"
+                        android:layout_marginLeft="56dp"
+                        android:layout_width="53dp"
+                        android:layout_height="53dp"
+                        android:src="@drawable/downarrow"
+                        android:scaleType="fitXY"
+                        android:onClick="walkDown"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <com.example.zniannar.measureisland.MyKeyboard
+                android:id="@+id/keyboard"
+                android:layout_width="592dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:scaleY="1.3"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/rightBorder"
+            android:src="@drawable/spacebattle2"
+            android:layout_width="15dp"
+            android:scaleType="fitXY"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="0dp"
+        android:id="@+id/bottomBorder"
+        android:src="@drawable/spacebattle2"
+        android:scaleType="fitXY"
+        android:layout_width="600dp"
+        android:layout_height="5dp"
+        />
+
+
+    <com.example.zniannar.measureisland.MyKeyboard
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"/>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tombstone"
+    tools:context="com.example.zniannar.measureisland.GameOver">
+
+    <Button
+        android:id="@+id/gameOverButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="480dp"
+        android:text="BACK TO MAIN MENU"
+        android:textColor="#ff2a2a"
+        android:textSize="30sp"
+        android:onClick="continueGame"/>
+
+</LinearLayout>
